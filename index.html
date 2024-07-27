@@ -9,25 +9,35 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
+            background-image: url('Screenshot (362).png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             color: #333333;
             display: flex;
             flex-direction: column;
             align-items: center;
             line-height: 1.6;
+            min-height: 100vh; /* Ensure body covers at least the full viewport height */
+            box-sizing: border-box;
         }
+
         header {
             width: 100%;
             padding: 20px;
-            background-color: #f7f7f7;
+            background-color: rgba(247, 247, 247, 0.8); /* Semi-transparent background */
             text-align: center;
             border-bottom: 1px solid #e1e4e8;
+            box-sizing: border-box;
         }
+
         header h1 {
             margin: 0;
             font-size: 2em;
             font-weight: 700;
+            color: #333333; /* Dark grey color */
         }
+
         .main-content {
             display: flex;
             flex-direction: column;
@@ -35,19 +45,10 @@
             padding: 40px 20px;
             width: 100%;
             max-width: 1200px;
-            background-image: url('Screenshot (362).png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 400px; /* Adjust height as needed */
-            color: white; /* Adjust text color for contrast */
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.7); /* Text shadow for better readability */
-            box-sizing: border-box; /* Ensure padding is included in the height calculation */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            box-sizing: border-box;
         }
-        .laptop-image {
-            width: 100%;
-            max-width: 800px;
-        }
+
         .repositories {
             margin-top: 40px;
             width: 100%;
@@ -55,6 +56,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
+
         .repository {
             background: #f7f7f7;
             padding: 20px;
@@ -65,31 +67,42 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s;
         }
+
         .repository:hover {
             transform: translateY(-5px);
         }
+
         .repository h2 {
             font-size: 1.5em;
             font-weight: 600;
             margin: 0 0 10px 0;
-            color: #333333;
+            color: #333333; /* Dark grey color */
         }
+
         .repository h2 a {
             text-decoration: none;
-            color: #333333;
+            color: #333333; /* Dark grey color */
         }
+
         .repository p {
             margin: 10px 0 0 0;
             font-size: 1em;
             line-height: 1.6;
-            color: #333333;
+            color: #333333; /* Dark grey color */
         }
+
         footer {
             width: 100%;
             padding: 20px;
             text-align: center;
-            background-color: #f7f7f7;
+            background-color: rgba(247, 247, 247, 0.8); /* Semi-transparent background */
             border-top: 1px solid #e1e4e8;
+            box-sizing: border-box;
+        }
+
+        footer p {
+            margin: 0;
+            color: #333333; /* Dark grey color */
         }
     </style>
 </head>
@@ -98,7 +111,6 @@
         <h1>Despoina Tiktopoulou's Portfolio</h1>
     </header>
     <div class="main-content">
-        <img src="Screenshot (362).png" alt="Laptop" class="laptop-image">
         <div class="repositories" id="repositories">
             <!-- Repositories will be listed here -->
         </div>
