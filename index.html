@@ -23,18 +23,19 @@
             width: 100%;
             background: url('https://i.imgur.com/G0aK1Jl.png') no-repeat center center;
             background-size: cover;
-            padding: 40px 20px;
             display: flex;
             justify-content: center;
             box-sizing: border-box;
         }
         
         header {
-           background-color: rgba(247, 247, 247, 0.8);
+            background-color: rgba(247, 247, 247, 0.8);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            width: 100%;
+            max-width: 1200px;
         }
 
         header h1 {
@@ -151,10 +152,12 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Despoina Tiktopoulou's portfolio</h1>
-         <p class="intro">Welcome to my portfolio! Here you will find a selection of my projects and repositories.</p>
-    </header>
+    <div class="header-container">
+        <header>
+            <h1>Despoina Tiktopoulou's Portfolio</h1>
+            <p class="intro">Welcome to my portfolio! Here you will find a selection of my projects and repositories.</p>
+        </header>
+    </div>
     <div class="main-content">
         <div class="repositories" id="repositories">
             <!-- Repositories will be listed here -->
