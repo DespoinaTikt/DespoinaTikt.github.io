@@ -20,8 +20,10 @@ header {
 header .banner {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
     display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
 }
 
 .banner-text {
@@ -42,6 +44,7 @@ header .banner {
 .banner-text p {
     font-size: 1.2rem;
     margin: 0.5rem 0 0;
+    color: inherit;
 }
 
 h1, h2 {
