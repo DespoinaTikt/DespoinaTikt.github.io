@@ -46,12 +46,6 @@ header .banner {
     font-size: 2.5rem;
 }
 
-.banner-text p {
-    font-size: 1.2rem;
-    margin: 0.5rem 0 0;
-    color: inherit;
-}
-
 h1, h2 {
     color: #8A5D9A;
 }
